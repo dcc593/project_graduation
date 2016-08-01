@@ -1,0 +1,10 @@
+<h1>Index of User Table</h1>
+
+<% @users.each do |character| %>
+	first name: <%= character.first_name %><br>
+	last name: <%= character.last_name %><br>
+
+	<%= link_to 'profile', "/profiles/#{character.id}" %><br>
+<% end %>
+
+
